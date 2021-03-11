@@ -1,0 +1,436 @@
+/* COMMON RULES */
+
+body {
+  font-family: "Trip Sans Med", Arial;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* border: black solid 2px; */
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+/* Titles */
+h1 {
+  padding: 20px 0px;
+  font-size: 54px;
+  letter-spacing: 1.1px;
+  line-height: 64px;
+  font-family: "Trip Sans VF", "Trip Sans Med", Arial;
+}
+h1 span {
+  color: #fe6261;
+  font-family: "Trip Sans VF";
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 28px;
+}
+
+/* HEADER */
+header {
+  /* background-color: lightcoral; */
+  height: 60px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header img {
+  width: 188px;
+}
+
+header nav {
+  /* width: 400px;
+  height: 40px; */
+  /* background-color: lightgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav div {
+  margin-right: 20px;
+}
+
+header nav div i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+header button {
+  height: 40px;
+  width: 200px;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: inherit;
+}
+
+/* MAIN */
+
+/* Title */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title h2 {
+  margin: 0 20px;
+}
+.title div {
+  border-top: black solid 2px;
+  flex: 1;
+}
+
+/* Navigation Menu */
+.navigation-menu {
+  /* border: green 4px solid; */
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.navigation-menu > div {
+  border: black 1px solid;
+  border-radius: 10px;
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.navigation-menu > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Pictures */
+.pictures {
+  height: 430px;
+  /* background-color: red; */
+  display: flex;
+}
+
+.pictures .col-1 {
+  height: 100%;
+  /* background-color: blue; */
+  flex: 1;
+  margin-right: 2px;
+}
+
+.pictures .col-2 {
+  height: 100%;
+  /* background-color: purple; */
+  width: 480px;
+}
+
+.pictures .col-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.pictures .col-2 img {
+  height: calc(50% - 1.5px);
+  width: 100%;
+  object-fit: cover;
+  /* display: inline-block; */
+}
+
+.pictures .col-2 img:first-child {
+  border-top-right-radius: 20px;
+}
+
+.pictures .col-2 img:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+/* Description */
+.description {
+  margin: 50px 0;
+  display: flex;
+  /* border-radius: 50px; */
+}
+.descriptionbis {
+  border-radius: 20px 20px 0px 0px;
+}
+.map {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.description .col-1,
+.description .col-2 {
+  height: 100%;
+  /* border-radius: 20px; */
+}
+
+.description .col-1 {
+  width: 50%;
+}
+
+.description .col-2 {
+  border-radius: 20px;
+  width: calc(50% - 120px);
+  margin-left: 120px;
+}
+
+.description .col-1 p {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #474747;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.description .col-2 > div:first-child {
+  background-color: #ff5d5d;
+  height: 234px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.description .col-2 > div:last-child {
+  height: 190px;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.description .col-2 p {
+  margin: 20px 0;
+}
+
+.description button {
+  height: 55px;
+  width: 155px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.description button:hover {
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+/* Section 1 */
+.section1 {
+  font-size: 20px;
+  margin: 30px 0 100px 0;
+  font-family: "Trip Régular";
+}
+
+.section1 > p {
+  text-align: right;
+  margin: 40px 40px;
+  font-family: "Trip Régular";
+  font-size: 14px;
+  /* padding-left: 30px; */
+}
+
+.section1 > div:last-child {
+  display: flex;
+}
+
+.section1 img {
+  width: 70px;
+  height: 70px;
+}
+
+.section1 > div:last-child > div {
+  border: grey solid 2px;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1 > div:last-child > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Section 2 */
+
+.section2 > div:nth-child(2) {
+  /* border: red solid 2px; */
+  height: 340px;
+  margin: 30px 0;
+  display: flex;
+}
+
+.section2 .texts {
+  /* background-color: lightgrey; */
+  flex: 1;
+  height: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.section2 .texts p {
+  color: #474747;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.section2 .carrousel {
+  /* background-color: lightcoral; */
+  flex: 3;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.section2 .column {
+  width: calc(100% / 3 - (40px / 3));
+  height: 100%;
+  /* background-color: cadetblue; */
+  /* border: black 2px solid; */
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.section2 .column:not(:last-child) {
+  margin-right: 20px;
+}
+
+.section2 .column img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.section2 .circle {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 .circle i {
+  font-size: 25px;
+  color: black;
+}
+
+.section2 .relative {
+  position: relative;
+}
+
+.section2 .circle:hover i {
+  color: red;
+  font-weight: 900;
+}
+
+/* Hidden elements */
+.hidden {
+  display: none !important;
+}
+.navigation-menu > div:nth-child(7) {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1328px) {
+  /* Navigation menu */
+  .navigation-menu > div:nth-child(7) {
+    display: flex;
+  }
+  .navigation-menu > div:not(:last-child) {
+    margin-right: 0px;
+  }
+  .navigation-menu {
+    flex-wrap: wrap;
+  }
+  .navigation-menu > div {
+    min-width: calc(100% / 4 - (60px / 4));
+  }
+  .navigation-menu > div:not(:nth-child(4n)) {
+    margin-right: 20px;
+  }
+  .navigation-menu > div:nth-child(1),
+  .navigation-menu > div:nth-child(2),
+  .navigation-menu > div:nth-child(3),
+  .navigation-menu > div:nth-child(4) {
+    margin-bottom: 20px;
+  }
+  /* Pictures */
+  .pictures {
+    height: 370px;
+  }
+  .pictures .col-2 {
+    width: 400px;
+  }
+  /* Description */
+  .description .col-2 > div:first-child {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* HEADER */
+  header span {
+    display: none;
+  }
+  /* Description */
+  .description {
+    /* margin: 50px 0; */
+    display: flex;
+    flex-direction: column;
+  }
+  .description .col-1 {
+    width: 100%;
+  }
+  .description .col-2 {
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    margin-top: 40px;
+  }
+  .description .col-2 > div:first-child {
+    width: 50%;
+  }
+  .description .col-2 > div:last-child {
+    height: 300px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden {
+    display: flex !important;
+  }
+  header nav {
+    display: none;
+  }
+  header img {
+    width: 132px;
+  }
+}
