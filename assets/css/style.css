@@ -27,15 +27,15 @@ h1 span {
 }
 h2 {
   font-size: 32px;
-  font-weight: bold;
+  font-family: Trip Sans VF;
 }
 h3 {
   font-size: 28px;
+  font-family: Trip Sans VF Bold;
 }
 
 /* HEADER */
 header {
-  /* background-color: lightcoral; */
   height: 60px;
 }
 
@@ -78,6 +78,7 @@ header button {
   cursor: pointer;
   border-radius: 20px;
   font-family: inherit;
+  font-size: 15px;
 }
 
 /* MAIN */
@@ -87,6 +88,11 @@ header button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.divisé {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 .title h2 {
   margin: 0 20px;
@@ -238,11 +244,14 @@ header button {
   margin: 30px 0 100px 0;
   font-family: "Trip Régular";
 }
+.section1 .title {
+  font-family: Trip Sans VF Extra-bold;
+}
 
 .section1 > p {
   text-align: right;
   margin: 40px 40px;
-  font-family: "Trip Régular";
+  /* font-family: Trip Sans VF Extra-bold; */
   font-size: 14px;
   /* padding-left: 30px; */
 }
@@ -285,10 +294,15 @@ header button {
   padding-right: 20px;
   box-sizing: border-box;
 }
-
+.fas {
+  color: #00aa6c;
+}
+.far {
+  color: #00aa6c;
+}
 .section2 .texts p {
-  color: #474747;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+  font-family: Georgia;
   font-size: 18px;
   margin: 30px 0;
 }
@@ -309,6 +323,7 @@ header button {
   /* border: black 2px solid; */
   box-sizing: border-box;
   flex-shrink: 0;
+  line-height: 25px;
 }
 
 .section2 .column:not(:last-child) {
@@ -320,6 +335,13 @@ header button {
   width: 100%;
   object-fit: cover;
   object-position: top;
+}
+.section2 .column p {
+  font-family: Trip Sans VF Regular;
+  line-height: 15px;
+}
+.section2 .column div {
+  line-height: 30px;
 }
 
 .section2 .circle {
@@ -356,7 +378,47 @@ header button {
 .navigation-menu > div:nth-child(7) {
   display: none;
 }
-
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf1ed;
+  height: 200px;
+  width: 100%;
+}
+.containerf {
+  margin: 0px 100px;
+  position: absolute;
+}
+.input {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-left: 5px;
+  height: 30px;
+  border-color: silver;
+}
+.minilogo {
+  width: 40px;
+  margin-right: 20px;
+}
+.séparer {
+  line-height: 30px;
+  display: flex;
+}
+.version {
+  font-family: Trip Sans VF Regular;
+  font-size: 12px;
+  color: #333333;
+}
+.styl {
+  font-family: Trip Sans VF;
+  cursor: pointer;
+  background-color: #faf1ed;
+  border: none;
+  font-size: 16px;
+  text-decoration: underline;
+}
 /* MEDIA QUERIES */
 @media (max-width: 1328px) {
   /* Navigation menu */
